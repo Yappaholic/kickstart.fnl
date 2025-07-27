@@ -32,4 +32,3 @@
 (set! background "dark")
 ;; Set colorscheme instead of using ":colorscheme oxocarbon<CR>"
 (vim.cmd "colorscheme oxocarbon")
-

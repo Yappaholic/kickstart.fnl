@@ -3,12 +3,15 @@
   (vim.lsp.enable name))
 
 ;; This will enable native autocompletion for supported languages
-(vim.api.nvim_create_autocmd "LspAttach" 
-							 {:callback 
-							  (fn [ev]
-								(local client (vim.lsp.get_client_by_id ev.data.client_id))
-								(if (client:supports_method "textDocument/completion")
-									(vim.lsp.completion.enable true client.id ev.buf {:autotrigger true})))})
+(vim.api.nvim_create_autocmd "LspAttach"
+                             {:callback (fn [ev]
+                                          (local client
+                                                 (vim.lsp.get_client_by_id ev.data.client_id))
+                                          (if (client:supports_method "textDocument/completion")
+                                              (vim.lsp.completion.enable true
+                                                                         client.id
+                                                                         ev.buf
+                                                                         {:autotrigger true})))})
 
 (vim.cmd "set completeopt+=noselect")
 
@@ -27,4 +30,3 @@
 (lsp! "ols")
 ;; Zig
 (lsp! "zls")
-

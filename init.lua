@@ -9,6 +9,8 @@ vim.pack.add({
 		"https://github.com/nyoom-engineering/oxocarbon.nvim",
         -- Premade LSP configurations
 		"https://github.com/neovim/nvim-lspconfig",
+        -- Autoformatting buffers
+		"https://github.com/stevearc/conform.nvim",
         -- Tree-sitter integration
 		"https://github.com/nvim-treesitter/nvim-treesitter",
         -- Modern file explorer

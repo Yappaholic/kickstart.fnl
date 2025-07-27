@@ -5,4 +5,5 @@
 (require :plugin.tree-sitter)
 (require :plugin.harpoon)
 (require :plugin.mini)
+(require :plugin.conform)
 (require :plugin.misc)

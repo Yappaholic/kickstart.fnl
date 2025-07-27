@@ -10,7 +10,5 @@
 
 ;; Markdown support
 (local render-markdown (require :render-markdown))
-
-(render-markdown.setup {:completions 
-					     {:blink 
-					       {:enabled true}}})
+;; Add completion support for markdown in blink
+(render-markdown.setup {:completions {:blink {:enabled true}}})
