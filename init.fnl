@@ -2,7 +2,7 @@
 (require-macros :hibiscus.vim)
 (require-macros :hibiscus.core)
 
-;; Same as 
+;; Same as lua's
 ;; require("keybinds")
 ;; require("plugin")
 (require :keybinds)

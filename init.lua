@@ -19,6 +19,7 @@ vim.pack.add({
 		"https://github.com/echasnovski/mini.statusline",
 		"https://github.com/echasnovski/mini.pairs",
 		"https://github.com/folke/trouble.nvim",
+		"https://github.com/MeanderingProgrammer/render-markdown.nvim",
 		{
 		 src = "https://github.com/ThePrimeagen/harpoon",
 		 version = "harpoon2"
