@@ -7,3 +7,4 @@
 (require :plugin.mini)
 (require :plugin.conform)
 (require :plugin.misc)
+(require :plugin.dap)
