@@ -2,7 +2,7 @@
 (local conform (require :conform))
 
 ;; Format on save with 500ms delay
-(conform.setup {:format_on_save {:timeout_ms 500 :lsp_format "fallback"}
+(conform.setup {:format_on_save {:timeout_ms 250 :lsp_format "fallback"}
                 ;; Set some useful formatters, install them by yourself ^-^
                 :formatters_by_ft {:lua [:stylua]
                                    :rust [:rustfmt]
