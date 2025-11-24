@@ -15,9 +15,9 @@
 ;; Stops words from wrapping on line end
 (set! nowrap)
 ;; Sets indentation
-(set! tabstop 4)
-(set! softtabstop 4)
-(set! shiftwidth 4)
+(set! tabstop 2)
+(set! softtabstop 2)
+(set! shiftwidth 2)
 (set! expandtab true)
 (set! smartindent true)
 ;; Enable 24-bit RGB color 
@@ -30,5 +30,7 @@
 (set! signcolumn "yes")
 ;; Prefer dark colorscheme
 (set! background "dark")
+;; Set clipboard to wayland wl-clipboard
+(set vim.g.clipboard "wl-copy")
 ;; Set colorscheme instead of using ":colorscheme oxocarbon<CR>"
-(vim.cmd "colorscheme oxocarbon")
+(vim.cmd "colorscheme ashen")

@@ -1,0 +1,98 @@
+{
+  "plugins": {
+    "ashen.nvim": {
+      "rev": "bfb04bd",
+      "src": "https://github.com/ficd0/ashen.nvim"
+    },
+    "blink.cmp": {
+      "rev": "bae4bae",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "'v1.6.0'"
+    },
+    "conform.nvim": {
+      "rev": "cde4da5",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
+    "harpoon": {
+      "rev": "87b1a35",
+      "src": "https://github.com/ThePrimeagen/harpoon",
+      "version": "'harpoon2'"
+    },
+    "hibiscus.nvim": {
+      "rev": "573b37c",
+      "src": "https://github.com/udayvir-singh/hibiscus.nvim"
+    },
+    "kanagawa.nvim": {
+      "rev": "aef7f5c",
+      "src": "https://github.com/rebelot/kanagawa.nvim"
+    },
+    "mini-git": {
+      "rev": "8324672",
+      "src": "https://github.com/echasnovski/mini-git"
+    },
+    "mini.diff": {
+      "rev": "fbb93ea",
+      "src": "https://github.com/echasnovski/mini.diff"
+    },
+    "mini.pairs": {
+      "rev": "b316e68",
+      "src": "https://github.com/echasnovski/mini.pairs"
+    },
+    "mini.pick": {
+      "rev": "fe1c25e",
+      "src": "https://github.com/echasnovski/mini.pick"
+    },
+    "mini.statusline": {
+      "rev": "1491990",
+      "src": "https://github.com/echasnovski/mini.statusline"
+    },
+    "neogit": {
+      "rev": "614a6348",
+      "src": "https://github.com/NeogitOrg/neogit"
+    },
+    "nvim-dap": {
+      "rev": "b38f7d3",
+      "src": "https://github.com/mfussenegger/nvim-dap"
+    },
+    "nvim-dap-view": {
+      "rev": "5029906",
+      "src": "https://github.com/igorlfs/nvim-dap-view"
+    },
+    "nvim-lspconfig": {
+      "rev": "c8503e6",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-treesitter": {
+      "rev": "42fc28ba",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "nvim-web-devicons": {
+      "rev": "8dcb311",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
+    "oil.nvim": {
+      "rev": "7e1cd77",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "oxocarbon.nvim": {
+      "rev": "9f85f60",
+      "src": "https://github.com/nyoom-engineering/oxocarbon.nvim"
+    },
+    "plenary.nvim": {
+      "rev": "b9fd522",
+      "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "render-markdown.nvim": {
+      "rev": "f58c05f",
+      "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
+    "tangerine.nvim": {
+      "rev": "885788f",
+      "src": "https://github.com/udayvir-singh/tangerine.nvim"
+    },
+    "trouble.nvim": {
+      "rev": "bd67efe",
+      "src": "https://github.com/folke/trouble.nvim"
+    }
+  }
+}

@@ -7,6 +7,7 @@ vim.pack.add({
 		"https://github.com/nvim-tree/nvim-web-devicons",
         -- Colorscheme
 		"https://github.com/nyoom-engineering/oxocarbon.nvim",
+        "https://github.com/ficd0/ashen.nvim",
         -- Premade LSP configurations
 		"https://github.com/neovim/nvim-lspconfig",
         -- Autoformatting buffers
@@ -40,6 +41,13 @@ vim.pack.add({
 		 src = "https://github.com/ThePrimeagen/harpoon",
 		 version = "harpoon2"
 		},
+        -- Debug adapter
+        "https://github.com/mfussenegger/nvim-dap",
+        --{
+        --    src = "https://github.com/julianolf/nvim-dap-lldb",
+        --    opts = {codelldb_path = "/opt/codelldb/extension/adapter/codelldb"}
+        --},
+        "https://github.com/igorlfs/nvim-dap-view"
 })
 
 -- Setup fennel compilation
