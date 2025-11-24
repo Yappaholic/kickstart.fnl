@@ -2,9 +2,10 @@
 ;; with "blazingly fast" search
 (local blink (require :blink.cmp))
 
-(blink.setup {:keymap {:preset "default"}
+(blink.setup {:keymap {:preset "default"
+                      "<C-o>" ["select_and_accept"]}
               ;; Set default keymaps 
-              ;; (<C-n>/<C-p> to scroll, <C-y> to accept, <C-e> to cancel)
+              ;; (<C-n>/<C-p> to scroll, <C-o> to accept, <C-e> to cancel)
               ;;
               ;; Set sources for the completion (searches lsp, filesystem path,
               ;; custom snippets and text inside the buffer) 
