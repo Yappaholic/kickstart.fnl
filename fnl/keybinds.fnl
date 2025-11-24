@@ -8,6 +8,9 @@
 ;; Set keybindings with "map!" macro like this:
 ;; (map! [list of modes] "keybinding" function "keybinding description")
 
+;; Copy and paste operations
+(map! [:n] "<leader>P" "\"+p" "Paste to buffer")
+(map! [:v] "<leader>Y" "\"+y" "Copy to buffer")
 ;; LSP
 (map! [:n] "<leader>lf" vim.lsp.buf.format "Format buffer")
 (map! [:n] "<leader>k" vim.lsp.buf.hover "Hover info")
