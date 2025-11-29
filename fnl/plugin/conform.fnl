@@ -9,6 +9,7 @@
                                    :zig [:zigfmt]
                                    :javascript [:prettier]
                                    :html [:prettier]
+                                   :go [:gofumpt]
                                    :json [:prettier]
                                    :css [:prettier]
                                    :odin [:odinfmt]

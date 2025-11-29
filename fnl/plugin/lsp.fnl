@@ -31,5 +31,11 @@
 (lsp! "ols")
 ;; Zig
 (lsp! "zls")
+;; Nix
+(vim.lsp.config "nixd" {:settings
+                        {:nixd 
+                         {:formatting 
+                          {:command ["alejandra"]}}}})
+(lsp! "nixd")
 ;; Rust
 (lsp! "rust_analyzer")

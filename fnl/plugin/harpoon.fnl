@@ -26,7 +26,7 @@
 (map! [:n] "<leader>a" harp_add "Add harpoon")
 (map! [:n] "<leader>h" harp_menu "Show harpoons")
 
-(map! [:n] "<M-1>" `(harp_select 1) "Select harpoon #1")
-(map! [:n] "<M-2>" `(harp_select 2) "Select harpoon #2")
-(map! [:n] "<M-3>" `(harp_select 3) "Select harpoon #3")
-(map! [:n] "<M-4>" `(harp_select 4) "Select harpoon #4")
+(map! [:n] "<M-a>" `(harp_select 1) "Select harpoon #1")
+(map! [:n] "<M-r>" `(harp_select 2) "Select harpoon #2")
+(map! [:n] "<M-q>" `(harp_select 3) "Select harpoon #3")
+(map! [:n] "<M-w>" `(harp_select 4) "Select harpoon #4")
