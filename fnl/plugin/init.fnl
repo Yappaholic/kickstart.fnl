@@ -1,5 +1,5 @@
 ;; Load every module inside the "plugin" folder
-(require :plugin.blink)
+(require :plugin.cmp)
 (require :plugin.lsp)
 (require :plugin.oil)
 (require :plugin.tree-sitter)

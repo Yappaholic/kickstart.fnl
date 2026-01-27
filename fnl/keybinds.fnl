@@ -4,6 +4,7 @@
 
 ;; Set leader key for keybindings
 (set vim.g.mapleader " ")
+(set vim.g.maplocalleader ",")
 
 ;; Set keybindings with "map!" macro like this:
 ;; (map! [list of modes] "keybinding" function "keybinding description")

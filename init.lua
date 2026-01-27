@@ -16,11 +16,17 @@ vim.pack.add({
 		"https://github.com/nvim-treesitter/nvim-treesitter",
         -- Modern file explorer
 		"https://github.com/stevearc/oil.nvim",
+    -- Lispy brackets
+    "https://github.com/eraserhd/parinfer-rust",
+    -- Scheme support
+    "https://github.com/Olical/conjure",
         -- Completion engine
-		{
-		 src = "https://github.com/saghen/blink.cmp", 
-		 version = "v1.6.0"
-		},
+    "https://github.com/hrsh7th/nvim-cmp",
+    "https://github.com/hrsh7th/cmp-buffer",
+    "https://github.com/hrsh7th/cmp-path",
+    "https://github.com/hrsh7th/cmp-cmdline",
+    "https://github.com/hrsh7th/cmp-nvim-lsp",
+    "https://github.com/PaterJason/cmp-conjure",
         -- Git GUI inside Neovim
 		"https://github.com/NeogitOrg/neogit",
 		"https://github.com/nvim-lua/plenary.nvim",

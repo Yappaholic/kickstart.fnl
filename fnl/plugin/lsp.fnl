@@ -1,3 +1,5 @@
+(require-macros :hibiscus.vim)
+(require-macros :hibiscus.core)
 (import-macros {: lsp!} :macros.lsp-macros)
 
 ;; This will enable native autocompletion for supported languages
@@ -19,7 +21,7 @@
 ;; Add supported languages (don't forget to install Language Server Protocols)
 ;; To check available languages use ":help lspconfig-all"
 ;; C/C++
-(lsp! "clangd")
+(lsp! "ccls")
 ;; Web
 (lsp! "ts_ls")
 (lsp! "html")
@@ -39,3 +41,6 @@
 (lsp! "nixd")
 ;; Rust
 (lsp! "rust_analyzer")
+;; Conjure setup
+(g! :conjure#filetype#scheme :conjure.client.guile.socket)
+(g! :conjure#client#guile#socket#host_port "localhost")
