@@ -21,12 +21,7 @@ vim.pack.add({
     -- Scheme support
     "https://github.com/Olical/conjure",
         -- Completion engine
-    "https://github.com/hrsh7th/nvim-cmp",
-    "https://github.com/hrsh7th/cmp-buffer",
-    "https://github.com/hrsh7th/cmp-path",
-    "https://github.com/hrsh7th/cmp-cmdline",
-    "https://github.com/hrsh7th/cmp-nvim-lsp",
-    "https://github.com/PaterJason/cmp-conjure",
+	"https://github.com/sadhgen/blink.cmp",
         -- Git GUI inside Neovim
 		"https://github.com/NeogitOrg/neogit",
 		"https://github.com/nvim-lua/plenary.nvim",
