@@ -8,7 +8,7 @@
                                           (local client
                                                  (vim.lsp.get_client_by_id ev.data.client_id))
                                           (if (client:supports_method "textDocument/completion")
-                                              (vim.lsp.completion.enable true
+                                              (vim.lsp.completion.enable false
                                                                          client.id
                                                                          ev.buf
                                                                          {:autotrigger true})))})
@@ -21,7 +21,7 @@
 ;; Add supported languages (don't forget to install Language Server Protocols)
 ;; To check available languages use ":help lspconfig-all"
 ;; C/C++
-(lsp! "ccls")
+(lsp! "clangd")
 ;; Web
 (lsp! "ts_ls")
 (lsp! "html")
@@ -41,6 +41,3 @@
 (lsp! "nixd")
 ;; Rust
 (lsp! "rust_analyzer")
-;; Conjure setup
-(g! :conjure#filetype#scheme :conjure.client.guile.socket)
-(g! :conjure#client#guile#socket#host_port "localhost")
