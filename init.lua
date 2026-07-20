@@ -13,13 +13,11 @@ vim.pack.add({
         -- Autoformatting buffers
 		"https://github.com/stevearc/conform.nvim",
         -- Tree-sitter integration
-		"https://github.com/nvim-treesitter/nvim-treesitter",
+		"https://github.com/romus204/tree-sitter-manager.nvim",
         -- Modern file explorer
 		"https://github.com/stevearc/oil.nvim",
     -- Lispy brackets
-    "https://github.com/eraserhd/parinfer-rust",
-    -- Scheme support
-    "https://github.com/Olical/conjure",
+    "https://github.com/julienvincent/nvim-paredit",
         -- Completion engine
 	"https://github.com/sadhgen/blink.cmp",
         -- Git GUI inside Neovim

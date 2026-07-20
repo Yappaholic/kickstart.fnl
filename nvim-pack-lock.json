@@ -89,9 +89,9 @@
       "rev": "c8503e6",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
-    "nvim-treesitter": {
-      "rev": "42fc28ba",
-      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    "nvim-paredit": {
+      "rev": "b6ba636874a3115d944e35746444724240568aca",
+      "src": "https://github.com/julienvincent/nvim-paredit"
     },
     "nvim-web-devicons": {
       "rev": "8dcb311",
@@ -120,6 +120,10 @@
     "tangerine.nvim": {
       "rev": "885788f",
       "src": "https://github.com/udayvir-singh/tangerine.nvim"
+    },
+    "tree-sitter-manager.nvim": {
+      "rev": "09e3a321eea8100cacd2e759c3a6c9d350295fab",
+      "src": "https://github.com/romus204/tree-sitter-manager.nvim"
     },
     "trouble.nvim": {
       "rev": "bd67efe",

@@ -23,14 +23,14 @@
 ;; Enable 24-bit RGB color 
 (set! termguicolors true)
 ;; Add visual line at 80-th column
-(set! colorcolumn "80")
+(set! colorcolumn :80)
 ;; Disable temporary files for buffers
 (set! swapfile false)
 ;; Add gutters on the left side of number column
-(set! signcolumn "yes")
+(set! signcolumn :yes)
 ;; Prefer dark colorscheme
-(set! background "dark")
+(set! background :dark)
 ;; Set clipboard to wayland wl-clipboard
-(set vim.g.clipboard "wl-copy")
+(set vim.g.clipboard :wl-copy)
 ;; Set colorscheme instead of using ":colorscheme oxocarbon<CR>"
-(vim.cmd "colorscheme ashen")
+(vim.cmd "colorscheme oxocarbon")

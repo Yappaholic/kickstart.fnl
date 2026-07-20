@@ -3,11 +3,11 @@
 (import-macros {: lsp!} :macros.lsp-macros)
 
 ;; This will enable native autocompletion for supported languages
-(vim.api.nvim_create_autocmd "LspAttach"
+(vim.api.nvim_create_autocmd :LspAttach
                              {:callback (fn [ev]
                                           (local client
                                                  (vim.lsp.get_client_by_id ev.data.client_id))
-                                          (if (client:supports_method "textDocument/completion")
+                                          (if (client:supports_method :textDocument/completion)
                                               (vim.lsp.completion.enable false
                                                                          client.id
                                                                          ev.buf
@@ -21,23 +21,21 @@
 ;; Add supported languages (don't forget to install Language Server Protocols)
 ;; To check available languages use ":help lspconfig-all"
 ;; C/C++
-(lsp! "clangd")
+(lsp! :clangd)
 ;; Web
-(lsp! "ts_ls")
-(lsp! "html")
-(lsp! "json")
-(lsp! "cssls")
+(lsp! :ts_ls)
+(lsp! :html)
+(lsp! :json)
+(lsp! :cssls)
 ;; Golang
-(lsp! "gopls")
+(lsp! :gopls)
 ;; Odin
-(lsp! "ols")
+(lsp! :ols)
 ;; Zig
-(lsp! "zls")
+(lsp! :zls)
 ;; Nix
-(vim.lsp.config "nixd" {:settings
-                        {:nixd 
-                         {:formatting 
-                          {:command ["alejandra"]}}}})
-(lsp! "nixd")
+(vim.lsp.config :nixd {:settings {:nixd {:formatting {:command [:alejandra]}}}})
+
+(lsp! :nixd)
 ;; Rust
-(lsp! "rust_analyzer")
+(lsp! :rust_analyzer)

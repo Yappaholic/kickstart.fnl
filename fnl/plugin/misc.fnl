@@ -9,6 +9,9 @@
 (trouble.setup {})
 
 ;; Markdown support
-(local render-markdown (require :render-markdown))
+;;(local render-markdown (require :render-markdown))
 ;; Add completion support for markdown in blink
-(render-markdown.setup {:completions {:blink {:enabled true}}})
+;;(render-markdown.setup {:completions {:blink {:enabled true}}})
+
+(local paredit (require :nvim-paredit))
+(paredit.setup {})
