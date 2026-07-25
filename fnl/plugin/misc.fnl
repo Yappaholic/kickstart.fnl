@@ -15,3 +15,6 @@
 
 (local paredit (require :nvim-paredit))
 (paredit.setup {})
+
+(local orgmode (require :orgmode))
+(orgmode.setup {})

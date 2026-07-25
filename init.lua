@@ -1,72 +1,74 @@
 -- Initial setup with native Neovim package manager (0.12+)
 vim.pack.add({
-        -- Fennel packages
-		"https://github.com/udayvir-singh/tangerine.nvim",
-		"https://github.com/udayvir-singh/hibiscus.nvim",
-        -- Nerd font icons
-		"https://github.com/nvim-tree/nvim-web-devicons",
-        -- Colorscheme
-		"https://github.com/nyoom-engineering/oxocarbon.nvim",
-        "https://github.com/ficd0/ashen.nvim",
-        -- Premade LSP configurations
-		"https://github.com/neovim/nvim-lspconfig",
-        -- Autoformatting buffers
-		"https://github.com/stevearc/conform.nvim",
-        -- Tree-sitter integration
-		"https://github.com/romus204/tree-sitter-manager.nvim",
-        -- Modern file explorer
-		"https://github.com/stevearc/oil.nvim",
-    -- Lispy brackets
-    "https://github.com/julienvincent/nvim-paredit",
-        -- Completion engine
-	"https://github.com/sadhgen/blink.cmp",
-        -- Git GUI inside Neovim
-		"https://github.com/NeogitOrg/neogit",
-		"https://github.com/nvim-lua/plenary.nvim",
-        -- Find files, text and much more
-		"https://github.com/echasnovski/mini.pick",
-        -- Statusline with sensible defaults
-		"https://github.com/echasnovski/mini-git",
-		"https://github.com/echasnovski/mini.diff",
-		"https://github.com/echasnovski/mini.statusline",
-        -- Add pairs for brackets, braces, etc.
-		"https://github.com/echasnovski/mini.pairs",
-        -- Show diagnostics
-		"https://github.com/folke/trouble.nvim",
-        -- Make previewing markdown beautiful
-		"https://github.com/MeanderingProgrammer/render-markdown.nvim",
-        -- Seamless buffer switching
-		{
-		 src = "https://github.com/ThePrimeagen/harpoon",
-		 version = "harpoon2"
-		},
-        -- Debug adapter
-        "https://github.com/mfussenegger/nvim-dap",
-        --{
-        --    src = "https://github.com/julianolf/nvim-dap-lldb",
-        --    opts = {codelldb_path = "/opt/codelldb/extension/adapter/codelldb"}
-        --},
-        "https://github.com/igorlfs/nvim-dap-view"
+  -- Fennel packages
+  "https://github.com/udayvir-singh/tangerine.nvim",
+  "https://github.com/udayvir-singh/hibiscus.nvim",
+  -- Nerd font icons
+  "https://github.com/nvim-tree/nvim-web-devicons",
+  -- Colorscheme
+  "https://github.com/nyoom-engineering/oxocarbon.nvim",
+  "https://github.com/ficd0/ashen.nvim",
+  -- Premade LSP configurations
+  "https://github.com/neovim/nvim-lspconfig",
+  -- Autoformatting buffers
+  "https://github.com/stevearc/conform.nvim",
+  -- Tree-sitter integration
+  "https://github.com/romus204/tree-sitter-manager.nvim",
+  -- Modern file explorer
+  "https://github.com/stevearc/oil.nvim",
+  -- Lispy brackets
+  "https://github.com/julienvincent/nvim-paredit",
+  -- Org support
+  "https://github.com/nvim-orgmode/orgmode",
+  -- Completion engine
+  "https://github.com/sadhgen/blink.cmp",
+  -- Git GUI inside Neovim
+  "https://github.com/NeogitOrg/neogit",
+  "https://github.com/nvim-lua/plenary.nvim",
+  -- Find files, text and much more
+  "https://github.com/echasnovski/mini.pick",
+  -- Statusline with sensible defaults
+  "https://github.com/echasnovski/mini-git",
+  "https://github.com/echasnovski/mini.diff",
+  "https://github.com/echasnovski/mini.statusline",
+  -- Add pairs for brackets, braces, etc.
+  "https://github.com/echasnovski/mini.pairs",
+  -- Show diagnostics
+  "https://github.com/folke/trouble.nvim",
+  -- Make previewing markdown beautiful
+  "https://github.com/MeanderingProgrammer/render-markdown.nvim",
+  -- Seamless buffer switching
+  {
+    src = "https://github.com/ThePrimeagen/harpoon",
+    version = "harpoon2"
+  },
+  -- Debug adapter
+  "https://github.com/mfussenegger/nvim-dap",
+  --{
+  --    src = "https://github.com/julianolf/nvim-dap-lldb",
+  --    opts = {codelldb_path = "/opt/codelldb/extension/adapter/codelldb"}
+  --},
+  "https://github.com/igorlfs/nvim-dap-view"
 })
 
 -- Setup fennel compilation
 require "tangerine".setup({
 
-	-- save fnl output in a separate dir, it gets automatically added to package.path
-	target = vim.fn.stdpath [[data]] .. "/tangerine",
+  -- save fnl output in a separate dir, it gets automatically added to package.path
+  target = vim.fn.stdpath [[data]] .. "/tangerine",
 
-	-- compile files in &rtp, check ":help runtimepath"
-	rtpdirs = {
-		"plugin",
-		"colors",
-	},
+  -- compile files in &rtp, check ":help runtimepath"
+  rtpdirs = {
+    "plugin",
+    "colors",
+  },
 
-	compiler = {
-		-- disable popup showing compiled files
-		verbose = false,
+  compiler = {
+    -- disable popup showing compiled files
+    verbose = false,
 
-		-- compile every time you change fennel files or on entering vim
-		hooks = {"onsave", "oninit"}
-	}
+    -- compile every time you change fennel files or on entering vim
+    hooks = { "onsave", "oninit" }
+  }
 
 })

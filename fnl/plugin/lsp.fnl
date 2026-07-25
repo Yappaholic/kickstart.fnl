@@ -1,6 +1,8 @@
 (require-macros :hibiscus.vim)
 (require-macros :hibiscus.core)
-(import-macros {: lsp!} :macros.lsp-macros)
+(require-macros :macros.lsp-macros)
+;(import-macros {: lsp!} :macros.lsp-macros)
+; (import-macros {: lsps!} :macros.lsp-macros)
 
 ;; This will enable native autocompletion for supported languages
 (vim.api.nvim_create_autocmd :LspAttach
@@ -20,22 +22,25 @@
 
 ;; Add supported languages (don't forget to install Language Server Protocols)
 ;; To check available languages use ":help lspconfig-all"
-;; C/C++
-(lsp! :clangd)
-;; Web
-(lsp! :ts_ls)
-(lsp! :html)
-(lsp! :json)
-(lsp! :cssls)
-;; Golang
-(lsp! :gopls)
-;; Odin
-(lsp! :ols)
-;; Zig
-(lsp! :zls)
-;; Nix
 (vim.lsp.config :nixd {:settings {:nixd {:formatting {:command [:alejandra]}}}})
-
-(lsp! :nixd)
-;; Rust
-(lsp! :rust_analyzer)
+(lsps! [;; C/C++
+        :clangd
+        ;; Web
+        :ts_ls
+        :html
+        :json
+        :ccls
+        ;; Golang
+        :gopls
+        ;; Odin
+        :ols
+        ;; Zig
+        :zls
+        ;; Nix
+        :nixd
+        ;; Rust
+        :rust_analyzer
+        ;; Lua
+        :lua_ls
+        ;; Experimental Org mode support
+        :org])

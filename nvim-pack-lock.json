@@ -101,6 +101,10 @@
       "rev": "7e1cd77",
       "src": "https://github.com/stevearc/oil.nvim"
     },
+    "orgmode": {
+      "rev": "f32a06d4b5399dad8bf0478c772bf6c513f02dcf",
+      "src": "https://github.com/nvim-orgmode/orgmode"
+    },
     "oxocarbon.nvim": {
       "rev": "9f85f60",
       "src": "https://github.com/nyoom-engineering/oxocarbon.nvim"
