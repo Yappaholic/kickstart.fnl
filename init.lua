@@ -1,5 +1,7 @@
 -- Initial setup with native Neovim package manager (0.12+)
 vim.pack.add({
+  -- Switch between source and header files
+  "https://github.com/jakemason/ouroboros.nvim",
   -- Fennel packages
   "https://github.com/udayvir-singh/tangerine.nvim",
   "https://github.com/udayvir-singh/hibiscus.nvim",
@@ -8,6 +10,8 @@ vim.pack.add({
   -- Colorscheme
   "https://github.com/nyoom-engineering/oxocarbon.nvim",
   "https://github.com/ficd0/ashen.nvim",
+  "https://github.com/maxmx03/solarized.nvim",
+  "https://github.com/rose-pine/neovim",
   -- Premade LSP configurations
   "https://github.com/neovim/nvim-lspconfig",
   -- Autoformatting buffers

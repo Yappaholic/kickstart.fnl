@@ -73,6 +73,10 @@
       "rev": "614a6348",
       "src": "https://github.com/NeogitOrg/neogit"
     },
+    "neovim": {
+      "rev": "ff483051a47e27d84bdef47703538df1ed9f4a47",
+      "src": "https://github.com/rose-pine/neovim"
+    },
     "nvim-cmp": {
       "rev": "da88697d7f45d16852c6b2769dc52387d1ddc45f",
       "src": "https://github.com/hrsh7th/nvim-cmp"
@@ -105,6 +109,10 @@
       "rev": "f32a06d4b5399dad8bf0478c772bf6c513f02dcf",
       "src": "https://github.com/nvim-orgmode/orgmode"
     },
+    "ouroboros.nvim": {
+      "rev": "4c8fe182cf03f7d2ebe353f08472809c3b3ab94b",
+      "src": "https://github.com/jakemason/ouroboros.nvim"
+    },
     "oxocarbon.nvim": {
       "rev": "9f85f60",
       "src": "https://github.com/nyoom-engineering/oxocarbon.nvim"
@@ -120,6 +128,10 @@
     "render-markdown.nvim": {
       "rev": "f58c05f",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
+    "solarized.nvim": {
+      "rev": "a8085e29883ddcfb39bd46197eb32ef00df05368",
+      "src": "https://github.com/maxmx03/solarized.nvim"
     },
     "tangerine.nvim": {
       "rev": "885788f",

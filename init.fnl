@@ -33,4 +33,4 @@
 ;; Set clipboard to wayland wl-clipboard
 (set vim.g.clipboard :wl-copy)
 ;; Set colorscheme instead of using ":colorscheme oxocarbon<CR>"
-(vim.cmd "colorscheme oxocarbon")
+(vim.cmd "colorscheme rose-pine")

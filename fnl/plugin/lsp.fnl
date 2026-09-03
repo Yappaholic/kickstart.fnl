@@ -23,24 +23,24 @@
 ;; Add supported languages (don't forget to install Language Server Protocols)
 ;; To check available languages use ":help lspconfig-all"
 (vim.lsp.config :nixd {:settings {:nixd {:formatting {:command [:alejandra]}}}})
-(lsps! [;; C/C++
-        :clangd
-        ;; Web
-        :ts_ls
-        :html
-        :json
-        :ccls
-        ;; Golang
-        :gopls
-        ;; Odin
-        :ols
-        ;; Zig
-        :zls
-        ;; Nix
-        :nixd
-        ;; Rust
-        :rust_analyzer
-        ;; Lua
-        :lua_ls
-        ;; Experimental Org mode support
-        :org])
+; (lsps! [;; C/C++
+;         :clangd
+;         ;; Web
+;         :ts_ls
+;         :html
+;         :json
+;         :ccls
+;         ;; Golang
+;         :gopls
+;         ;; Odin
+;         :ols
+;         ;; Zig
+;         :zls
+;         ;; Nix
+;         :nixd
+;         ;; Rust
+;         :rust_analyzer
+;         ;; Lua
+;         :lua_ls
+;         ;; Experimental Org mode support
+;         :org])

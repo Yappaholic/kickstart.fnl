@@ -20,6 +20,8 @@
 (map! [:n] "gd" vim.lsp.buf.definition "Go to definition")
 (map! [:n] "gr" vim.lsp.buf.references "Go to references")
 
+(map! [:n] "<leader>gh" ":Ouroboros<CR>" "Switch C/C++ files")
+
 ;; Trouble for diagnostics popup
 (map! [:n] "<leader>dd" ":Trouble diagnostics toggle<CR>" "Open Diagnostics")
 

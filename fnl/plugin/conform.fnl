@@ -13,4 +13,6 @@
                                    :json [:prettier]
                                    :css [:prettier]
                                    :odin [:odinfmt]
+                                   :cpp [:clang-format]
+                                   :c [:clang-format]
                                    :fennel [:fnlfmt]}})
